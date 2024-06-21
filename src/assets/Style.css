@@ -1,0 +1,743 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: #004185;
+    margin-top: 8px;
+}
+
+div h4{
+  color: #004185
+}
+
+div h3, h1{
+    font-size: 24px;
+    color: #c4ccca;
+}
+
+p{
+    font-weight: bold;
+    font-size: medium;
+}
+
+input{
+    width: 32% !important;
+    font-weight: bold !important;
+}
+
+#show{
+  display: none;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ #first{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+ } 
+
+ #second{
+     position: absolute;
+     top: 15vh;
+     left: 10%;
+     padding: 4%;
+     background: #fee7cf;
+ }
+
+ #third{
+    position: relative;
+ }
+
+ #fourth{
+  position: absolute;
+  top: 90vh;
+  left: 20%;
+  padding: 4%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+ #firstCont{
+  padding: 20px 20px 0px 0px;
+ }
+
+
+ #fourth{
+     left: 20%;
+     padding: 4%;
+     background-color: #ffffff;
+     border-radius: 10px;
+ }
+
+ #links{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 12px;
+ }
+
+#fut{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+ #links:hover{
+     text-decoration: underline;
+ }
+
+ #side{
+  padding: 11.2px;
+ }
+
+ #navLink{
+    list-style-type: none;
+    font-size: 16px;
+    background: #5e535a;
+    padding: 10px 20px;
+    height: 75vh;
+    border-radius: 15px;
+ }
+
+ .log{
+    padding-top: 18pc;
+    color: white;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+ }
+
+ .main{
+  display: flex;
+  gap: 10%;
+  padding: 20px;
+ }
+
+
+ #input{
+   background: none;
+   border: none;
+   outline: 0;
+   color: #665d62;
+ }
+
+ #search{
+    display: flex;
+    border: 2px solid #665d62; 
+    color: #665d62; 
+    align-items: center; 
+    padding: 10px 15px;
+    gap: 2%;
+    height: 7vh;
+    border-radius: 50px;
+ }
+
+#transferTwo{
+    background: #da7a85;
+    height: 20vh;
+    width: 80%;
+    border-radius: 10%;
+    color: #c2c6d0;
+}
+
+ #transferOne{
+    background: #5e535a;
+    width: 80%;
+    height: 20vh;
+    border-radius: 10%;
+    color: #c2c6d0;
+ }
+  
+ .ppix {
+  display: none; 
+}
+
+.pix {
+  position: relative;
+  display: inline-block;
+}
+
+.butn{
+ margin-left: 55px;
+ margin-top: 8px;
+}
+
+.inputNw {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border: 2px solid #ccc; 
+  border-radius: 1000px;
+}
+
+.input{
+  position: absolute;
+  border-radius: 50%;
+  top: 15vh;
+  left: 5vh;
+}
+
+.icons{
+  font-size: 23px;
+  color: blanchedalmond;
+}
+
+.container{
+  align-items: center;
+}
+
+.icons1{
+  font-size: 23px;
+  color: blanchedalmond;
+  display: flex;
+  gap: 1.2pc;
+}
+
+.active {
+  position: relative;
+  align-items: center;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  gap: 2%;
+  background-color: rgb(0, 217, 255);
+  width: 2px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+  }
+  
+  .heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+
+  .logoNw img{
+    width: 20%;
+    margin-left: 16%;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+  
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+  
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+  
+  .valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+  }
+  
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+  }
+  
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+  
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset; */
+    background-color: #b19682;
+  }
+  
+  .flip-card-back {
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset; */
+    background-color: #b19682;
+    transform: rotateY(180deg);
+  }
+
+  #signIn{
+    width: 25%;
+    margin-left: 60px;
+  }
+
+  #phone{
+    width: 100%;
+    height: fit-content;
+    object-fit: cover
+  }
+
+@media screen and (max-width: 1299px) {
+    #first{
+        position: relative;
+        width: 100%;
+        height: 78vh;
+     } 
+    
+     #second{
+         position: absolute;
+         top: 32vh;
+         left: 2%;
+         padding: 2%;
+         width: fit-content;
+         height: fit-content;
+         background: #fee7cf;
+     }
+
+     #third{
+        position: relative;
+     }
+    
+     #fourth{
+         position: absolute;
+         left: 0%;
+         padding: 20px 20px 20px 20px;
+     }
+
+     #navLink{
+      position: fixed; /* Fixed positioning */
+      top: 9vh; /* Distance from the top */
+      left: 0; /* Ensure it's aligned correctly, adjust if necessary */
+      list-style-type: none;
+      font-size: 16px;
+      background: rgba(0, 0, 0, 0.5); /* Dark color with transparency */
+      border-radius: 15px; /* Rounded corners */
+      color: white; /* Text color for readability */
+      padding: 10px 20px;
+      width: fit-content;
+      height: 35vh;
+      z-index: 1000; /* Ensure the navLink is above other elements */
+   }
+
+   #navLink::before{
+    content: '';
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background: inherit; 
+    filter: blur(10px); 
+    z-index: -1;
+    border-radius: inherit;
+      z-index: 1000; /* Ensure the navLink is above other elements */
+   }
+
+   #navLink::before{
+    content: '';
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background: inherit; 
+    filter: blur(10px); 
+    z-index: -1;
+    border-radius: inherit;
+   }  
+     #thirdCont{
+        position: absolute;
+        top: 5vh;
+        padding-left: 75%;
+     }
+
+     #firstCont{
+      height: fit-content;
+      width: 100%;
+      padding: 20px 20px 0px 0px;
+     }
+
+     .logoNw img{
+      width: 45%;
+      margin-left: 0;
+      padding: 1rem 0;
+    }
+
+    #signIn{
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    #register{
+      background-color: #f5f7f8;
+      width: 100%;
+      border-top-left-radius: 10px !important;
+      border-top-right-radius: 10px !important
+    }
+
+    #phone{
+      width: 100%;
+      height: fit-content;
+      object-fit: cover;
+    }
+
+    #trsf{
+      width: 40%;
+    }
+
+     .log{
+      padding-top: 3pc;
+      color: white;
+      display: flex;
+      gap: 5%;
+      align-items: center;
+   }
+
+   #form{
+    text-align: center;
+    align-items: center;
+   }
+
+     #nav-link{
+        position: relative;
+     }
+
+     #side{
+      padding: 10px;
+     }
+    
+     #secondcont{
+        /* position: absolute;
+        top: 4vh;
+        padding-left: 27%; */
+     }
+
+     #transferTwo{
+        background: #da7a85;
+        height: 20vh;
+        width: 100%;
+        border-radius: 10%;
+        color: #c2c6d0;
+    }
+    
+     #transferOne{
+        background: #5e535a;
+        height: 20vh;
+        width: 100%;
+        border-radius: 10%;
+        color: #c2c6d0;
+     }
+
+     .inputNw {
+      width: 150px; 
+      height: 150px; 
+      object-fit: cover; 
+      border: 2px solid #ccc; 
+      border-radius: 1000px;
+    }
+
+    .butn{
+      margin-left: 30px;
+      margin-top: 8px;
+     }
+
+     #side{
+      padding: 11.2px;
+     }
+
+    .main{
+      display: flex;
+      gap: 10%;
+      padding-top: 35vh;
+      position: relative;
+     }
+    
+     #input{
+       background: none;
+       border: none;
+       outline: 0;
+       color: #665d62;
+     }
+    
+     #search{
+        display: flex;
+        border: 2px solid #665d62; 
+        color: #665d62; 
+        align-items: center; 
+        padding: 10px 15px;
+        gap: 2%;
+        height: 7vh;
+        border-radius: 50px;
+     }
+    
+    #transferTwo{
+        background: #da7a85;
+        height: 20vh;
+        width: 100%;
+        border-radius: 10%;
+        color: #c2c6d0;
+    }
+    
+     #transferOne{
+        background: #5e535a;
+        width: 100%;
+        height: 20vh;
+        border-radius: 10%;
+        color: #c2c6d0;
+     }
+
+     #secondRow{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+     }
+
+     #thirdRow{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+     }
+      
+     .ppix {
+      display: none; 
+      position: relative;
+    }
+
+    .container{
+      
+    }
+
+    .pix{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .icons1{
+      display: none;
+    }
+
+    #show{
+      display: block;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .col-sm-3, .col-md-5, .col-lg-3 {
+      flex: 1 1 calc(33.333% - 10px); /* Each button takes up 1/3 of the row, minus margin */
+      margin: 7px;
+    }
+
+    .flip-card{
+      display: none;
+    }
+
+    .adminDes{
+      background:  #3498db;
+      padding: 50px 30px 50px 30px;
+      color: white;
+      border-radius: 10px;
+    }
+    
+    /* .iconNw {
+      position: absolute;
+      bottom: 65vh;
+      left: 17vh; 
+      background-color: #fff; 
+      border: none;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    } */
+}
+
+.profile-container {
+  position: relative;
+  width: 150px; /* Adjust the width to match your profile picture size */
+  height: 150px; /* Adjust the height to match your profile picture size */
+  margin: 0 auto; /* Center the container if needed */
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Make the image circular if needed */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.iconNw {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed to position within the container */
+  right: 10px; /* Adjust as needed to position within the container */
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.admin{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.adminDes{
+  background:  #3498db;
+  padding: 50px 50px 50px 50px;
+  color: white;
+  border-radius: 10px;
+}
+
+.users{
+  background-color: #c2c6d0;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.transactns{
+  background-color: blueviolet;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
