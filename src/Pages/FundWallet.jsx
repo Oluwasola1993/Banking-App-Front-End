@@ -8,7 +8,7 @@ const FundWallet = () => {
     const [user, setuser] = useState("")
     const [account, setaccount] = useState("")
     const [bvnOrNin, setbvnOrNin] = useState("")
-    let url = "http://localhost:3000/dashboard";
+    let url = "https://bank-app-back-end.onrender.com/dashboard";
     let token = localStorage.getItem("token");
     const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ const FundWallet = () => {
     }, []);
 
     const getAccount = (email) => {
-        const url = 'http://localhost:3000/monnify/get_account'
+        const url = 'https://bank-app-back-end.onrender.com/monnify/get_account'
         axios.post(url, { userEmail: email })
             .then((res) => {
                 console.log(res);
@@ -55,7 +55,7 @@ const FundWallet = () => {
     }
 
     const createAccount = () => {
-        const url = 'http://localhost:3000/monnify'
+        const url = 'https://bank-app-back-end.onrender.com/monnify'
         let data = {
             accountReference: `SOLCEMAN_MFY_${genCode()}`,
             accountName: `${user.firstName} ${user.lastName}`,

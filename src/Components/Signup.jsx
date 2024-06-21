@@ -9,11 +9,7 @@ import Logo from "../assets/Images/ilogo.png";
 
 const Signup = () => {
   const navigate = useNavigate();
-  let URL = "http://localhost:3000/signup";
-
-  const signIn = () => {
-    navigate("/signIn");
-  };
+  let URL = "https://bank-app-back-end.onrender.com/signup";
 
   const formik = useFormik({
     initialValues: {

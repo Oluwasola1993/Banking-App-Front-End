@@ -23,7 +23,7 @@ const Adminservices = () => {
 
   useEffect(() => {
     const adminDashboard = () => {
-      let url = "http://localhost:3000/admin_dashboard";
+      let url = "https://bank-app-back-end.onrender.com/admin_dashboard";
       let token = localStorage.getItem("token");
 
       axios
@@ -54,7 +54,7 @@ const Adminservices = () => {
   }, []);
 
   const getSettings = () => {
-    let URL = "http://localhost:3000/admin-settings";
+    let URL = "https://bank-app-back-end.onrender.com/admin-settings";
     axios
       .get(URL)
       .then((res) => {
@@ -67,7 +67,7 @@ const Adminservices = () => {
   };
 
   const getDataPlans = () => {
-    let URL = "http://localhost:3000/get-dataPlan";
+    let URL = "https://bank-app-back-end.onrender.com/get-dataPlan";
     axios
       .get(URL)
       .then((res) => {
@@ -101,7 +101,7 @@ const Adminservices = () => {
       if (!networkId) {
         toast.error("Please select a network");
       } else {
-        const url = "http://localhost:3000/add-dataPlans";
+        const url = "https://bank-app-back-end.onrender.com/add-dataPlans";
         const data = {
           network_id: networkId,
           server_id: values.serverId,
@@ -125,7 +125,7 @@ const Adminservices = () => {
   });
 
   const editAirtime = () => {
-    const url = "http://localhost:3000/edit-adminSettings";
+    const url = "https://bank-app-back-end.onrender.com/edit-adminSettings";
     let newValue = document.getElementById("airtimePercentage").value;
     axios
       .post(url, { whatToEdit: "airtimePrice", newValue })
@@ -150,7 +150,7 @@ const Adminservices = () => {
     } else if (network_id == "" || network_name == "") {
       toast.error("Spaces can't be empty");
     } else {
-      const url = "http://localhost:3000/add-networks";
+      const url = "https://bank-app-back-end.onrender.com/add-networks";
       axios
         .post(url, { network_id, network_name })
         .then((res) => {

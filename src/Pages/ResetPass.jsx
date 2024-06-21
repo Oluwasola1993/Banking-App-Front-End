@@ -8,7 +8,7 @@ const ResetPass = () => {
     const [email, setemail] = useState("")
 
     const sendMail = () => {
-        let url = "http://localhost:3000/reset-password";
+        let url = "https://bank-app-back-end.onrender.com/reset-password";
 
         document.getElementById("loader").style.display = "block";
         document.getElementById("text").style.display = "none";

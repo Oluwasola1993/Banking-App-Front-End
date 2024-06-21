@@ -13,7 +13,7 @@ const Verify = () => {
     }, []);
 
     const checkEmail = () => {
-        let url = "http://localhost:3000/dashboard";
+        let url = "https://bank-app-back-end.onrender.com/dashboard";
         let token = localStorage.getItem("token");
         axios
             .get(url, {
@@ -40,7 +40,7 @@ const Verify = () => {
     };
 
     const resendVerificationEmail = async () => {
-        let URL = "http://localhost:3000/resendVerificationEmail";
+        let URL = "https://bank-app-back-end.onrender.com/resendVerificationEmail";
         axios
             .post(URL, { theEmail: user.emailInfo.email })
             .then((res) => {

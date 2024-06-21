@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   const navigate = useNavigate();
 
-  let url = "http://localhost:3000/dashboard";
+  let url = "https://bank-app-back-end.onrender.com/dashboard";
   let token = localStorage.getItem("token");
 
   const [profilePix, setprofilePix] = useState("");

@@ -15,7 +15,7 @@ const Intrawallet = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        let url = "http://localhost:3000/dashboard";
+        let url = "https://bank-app-back-end.onrender.com/dashboard";
         let token = localStorage.getItem("token");
 
         axios.get(url, {
@@ -44,7 +44,7 @@ const Intrawallet = () => {
             setreciever(false)
             setreceiverName("Enter a valid email address")
         } else {
-            let url = "http://localhost:3000/intra_transfer/get_user"
+            let url = "https://bank-app-back-end.onrender.com/intra_transfer/get_user"
             axios.post(url, { email: e.target.value })
                 .then((res) => {
                     console.log(res.data)
@@ -67,7 +67,7 @@ const Intrawallet = () => {
                 settotalAmount("You can only transfer up to 100")
             }
         } else {
-            let url = "http://localhost:3000/intra_transfer/payment_validation"
+            let url = "https://bank-app-back-end.onrender.com/intra_transfer/payment_validation"
             axios.post(url, { email: user.emailInfo.email, amount: e.target.value })
                 .then((res) => {
                     console.log(res.data)
@@ -91,7 +91,7 @@ const Intrawallet = () => {
         console.log(amount);
         console.log(receiver);
         if (amount && receiver) {
-            let url = "http://localhost:3000/intra_transfer"
+            let url = "https://bank-app-back-end.onrender.com/intra_transfer"
             axios.post(url, { senderEmail: user.emailInfo.email, amount: amount, receiver: receiver, description })
                 .then((res) => {
                     console.log(res.data)

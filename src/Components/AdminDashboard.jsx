@@ -50,7 +50,7 @@ const AdminDashboard = () => {
   }, []);
 
   const dashboard = () => {
-    let url = "http://localhost:3000/admin_dashboard";
+    let url = "https://bank-app-back-end.onrender.com/admin_dashboard";
     let token = localStorage.getItem("token");
 
     axios
@@ -78,7 +78,7 @@ const AdminDashboard = () => {
 
   const fetchUsers = () => {
     axios
-      .get("http://localhost:3000/fetch-users")
+      .get("https://bank-app-back-end.onrender.com/fetch-users")
       .then((res) => {
         setallUsers(res.data.allUsers.length);
         let totalBal = 0;
@@ -99,7 +99,7 @@ const AdminDashboard = () => {
 
   const getTotalTransactions = () => {
     axios
-      .get("http://localhost:3000/get-allTransactions")
+      .get("https://bank-app-back-end.onrender.com/get-allTransactions")
       .then((res) => {
         settotalTransactions(res.data.allTransactions.length);
       })
@@ -110,7 +110,7 @@ const AdminDashboard = () => {
 
   const fetchChartData = async () => {
     const response = await axios.get(
-      "http://localhost:3000/chart-transactions"
+      "https://bank-app-back-end.onrender.com/chart-transactions"
     );
     const data = response.data.result;
     console.log(data);

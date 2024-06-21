@@ -24,7 +24,7 @@ const Settings = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    let url = "http://localhost:3000/dashboard";
+    let url = "https://bank-app-back-end.onrender.com/dashboard";
     let token = localStorage.getItem("token");
 
     axios
@@ -63,7 +63,7 @@ const Settings = () => {
     };
   };
 
-  let endpoint = "http://localhost:3000/upload";
+  let endpoint = "https://bank-app-back-end.onrender.com/upload";
 
   const uploadPix = () => {
     axios
@@ -95,7 +95,7 @@ const Settings = () => {
   };
 
   const changePasswrd = () => {
-    const url = "http://localhost:3000/change-password";
+    const url = "https://bank-app-back-end.onrender.com/change-password";
     axios
       .post(url, {
         email: userMail,
